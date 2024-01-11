@@ -9,6 +9,11 @@ public class Hooks extends SeleniumUtility {
     public void open_browser() {
         openBrowser();
     }
+
     @After
     public void close_browser() { closeBrowser();}
+
+
 }
+
+

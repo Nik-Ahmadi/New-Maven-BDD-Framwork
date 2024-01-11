@@ -27,7 +27,7 @@ public class Setup {
        driver.get(url);
    }
    public void closeBrowser(){
-       driver.quit();
+      driver.quit();
    }
    public WebDriver getDriver(){
        return driver;

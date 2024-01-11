@@ -24,5 +24,11 @@ public class SeleniumUtility extends Setup {
         return driverWait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
 
     }
+    public void setElementData(By locator , String data){
+        WebElement element = getDriver().findElement(locator);
+        element.sendKeys(data);
+
+
+    }
 
 }
