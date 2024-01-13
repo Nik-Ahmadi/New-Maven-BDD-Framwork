@@ -2,6 +2,8 @@ package utilities;
 
 import base.Setup;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,8 +29,10 @@ public class SeleniumUtility extends Setup {
     public void setElementData(By locator , String data){
         WebElement element = getDriver().findElement(locator);
         element.sendKeys(data);
-
-
+    }
+    public byte[] tekScreenShots(){
+        TakesScreenshot screenshot = (TakesScreenshot) getDriver();
+        return screenshot.getScreenshotAs(OutputType.BYTES);
     }
 
 }

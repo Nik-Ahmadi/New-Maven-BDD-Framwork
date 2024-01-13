@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "classpath:features",
         glue = "steps",
         dryRun = false,
-        tags = "@CreateAccount",
+        tags = "",
         plugin = {
                 "pretty",
                 "html:target/htmlReports/cucumber-pretty.html",
